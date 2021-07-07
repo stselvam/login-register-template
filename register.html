@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #right {
+            height: auto;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row" id="login">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-2 col-lg-offset-3 text-center" id="left">
+                <i class="glyphicon glyphicon-road"></i>
+                <h2>Scriptmaker</h2>
+                <h4>Like highway but way better.</h4>
+            </div>
+
+            <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-4 col-lg-offset-0" id="right">
+                <h1 class="text-center">Register</h1>
+
+                <div id="username">
+                    <span>Firstname:</span>
+                    <input type="text" placeholder="username">
+                </div>
+
+                <div id="username">
+                    <span>Lastname:</span>
+                    <input type="text" placeholder="username">
+                </div>
+
+                <div id="username">
+                    <span>Username:</span>
+                    <input type="text" placeholder="username">
+                </div>
+
+                <div id="password">
+                    <span>Password:</span>
+                    <input type="password" placeholder="*********">
+                </div>
+
+                <button>Register</button>
+
+                <div class="text-center" id="acct">
+                    <span> Not got an account yet? </span>
+                </div>
+                <a href="login.html">
+                    <button id="signup-button">Login</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        document.querySelector("#left").style.height = (document.querySelector("#right").offsetHeight - 20) + "px";
+    </script>
+</body>
+
+</html>
